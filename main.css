@@ -1,0 +1,258 @@
+@font-face{
+	font-family: "Roboto-Regular";
+	src: url('FE Code Challenge 02/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url('FE Code Challenge 02/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: "Roboto-Condensed";
+	src: url("FE Code Challenge 02/fonts/RobotoCondensed-Regular.ttf");
+}
+
+body{
+	background-image: url(https://omega4agents.com/wp-content/uploads/Work-Comp-Program-for-Artisan-Contractors.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*filter: grayscale(100%);
+	opacity: .8*/;
+}
+
+.logo {
+	margin:10px 10px;
+	text-align: left;
+	color: white;
+	font-family: "Roboto-Bold";
+	font-size: 35px;
+	position: fixed;
+	top: 0;
+}
+
+.navbar {
+	text-align: center;
+	/*height: 10%;*/
+	position: relative;
+	background: rgba(255, 255, 255, 0);
+	/*color: white;*/
+	list-style-type: none;
+	margin: 20px 0px 20px 0px;
+	padding: 0;
+}
+
+.header {
+	font-family: "Roboto-Regular";
+	display: inline-block;
+	color: white;
+	margin: 0px 5% 0px 5%;
+	border-radius: 0px;
+	padding: 5px;
+}
+
+.header:hover {
+	color: black;
+	background-color: white;
+	border-radius: 1px;
+	transition: .5s;
+}
+
+.hamburger-container {
+	position: fixed;
+	right: 1%;
+	top: 0;
+}
+
+.hamburger {
+	/*position: absolute;*/
+	width: 20px;
+	height: 3px;
+	background-color: white;
+	margin: 6px 0px 0px;
+}
+
+a:link{
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: black;
+	border-radius: 1px;
+}
+
+.blurb {
+	position: fixed;
+	font-family: "Roboto-Bold";
+	font-size: 50px;
+	color: white;
+	max-width: 45%;
+	height: 100px;
+	margin-left: 10%;
+	top: 30%;
+}
+
+.blurb-2 {
+	position: fixed;
+	font-family: "Roboto-Condensed";
+	font-size: 20px;
+	color: white;
+	max-width: 45%;
+	margin-left: 10%;
+	top: 60%;
+}
+
+.signup-message {
+	font-family: "Roboto-Condensed";
+	color: white;
+	text-align: center;
+}
+
+form {
+	position: fixed;
+	top: 40%;
+	right: 3%;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: rgba(230, 230, 230, .3);
+	color: white;
+}
+
+input[type=text]:focus, input[type=password]:focus { 
+	background-color: rgba(0, 0, 0, .3);
+	/*color: black;*/
+	transition: .2s;
+}
+
+::placeholder {
+	font-family: "Roboto-Condensed";
+	color: white;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: lightblue;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+}
+
+.tos {
+	text-align: center;
+	font-family: "Roboto-Condensed";
+	color: lightgray;
+}
+
+.tm {
+	text-align: left;
+	position: fixed;
+	font-family: "Roboto-Condensed";
+	font-size: 15px;
+	color: white;
+	margin: 20px 0px 20px 0px;
+	bottom: 0;
+}
+
+.footer {
+	text-align: right;
+	width: 100%;
+	position: fixed;
+	background: rgba(255, 255, 255, 0);
+	color: white;
+	list-style-type: none;
+	margin: 20px 0px 20px 0px;
+	padding: 0;
+	bottom: 0;
+	right: 1%;
+}
+
+.footer-item {
+	font-family: "Roboto-Condensed";
+	font-size: 15px;
+	display: inline-block;
+	margin: 0px 5px 0px 5px;
+}
+
+@media (max-width: 768px){
+	.navbar {
+		text-align: right;
+	}
+
+	.blurb {
+		font-size: 40px;
+		margin-left: 10%;
+		top: 30%;
+	}
+
+	.blurb-2 {
+		font-size: 15px;
+	}
+
+	form {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 426px){
+
+	.logo {
+		font-size: 25px;
+		top: 2px;
+	}
+
+	.header {
+		/*color: green;*/
+		margin: 0px 5px 0px 5px;
+		padding: 0px;
+	}
+
+	.blurb {
+		min-width: 100%;
+		top: 15%;
+	}
+
+	.blurb-2 {
+		min-width: 100%;
+		top: 40%;
+	}
+
+	form{
+		position: relative;
+		justify-content: center;
+		right: 0;
+	}
+
+	.footer{
+		bottom: 20px;
+	}
+}
+
+@media (max-width: 376px){
+	.navbar {
+		top: 25px;
+	}
+}
+
+@media (max-width: 321px){
+	.footer {
+		text-align: center;
+	}
+
+	.footer-item {
+		font-size: 10px;
+	}
+}
